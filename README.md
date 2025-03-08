@@ -3,10 +3,13 @@ This is an ELAN extension for Kichwa speech recognition.
 The backbone speech recognizer is a fine-tuned version of Wav2Vec2-XLS-R-300M, and takes up approximately 1.2GB.
 Note that this repo does not have the speech recognition model itself due to its large file size.
 You will need to download the model by yourself.
+The model can be downloaded from the Hugging Face Hub: https://huggingface.co/ctaguchi/killkan-xls-r-300m
 Please contact the author (Chihiro Taguchi) if you need help with getting the model.
 
 ## How to add the extension to your ELAN
 1. Install this git repository
+1. Create the `models` directory (`mkdir models`)
+1. Move the model files under the `models` directory. Necessary files are: `added_tokens.json`, `model.safetensors`, `special_tokens_map.json`, `vocab.json`, `config.json`, `preprocessor_config.json`, and `tokenizer_config.json`.
 1. You need Python to run this extension.
   - If you don't have one, please install Python 3.9 from the [official release](https://www.python.org/downloads/).
   - If you have it already, make sure to use Python version 3.9. If your version is not 3.9 (you can check it by running `python --version` on your terminal), It is recommended to switch the version to 3.9 with [pyenv](https://github.com/pyenv/pyenv) by running `pyenv local 3.9` on your terminal.
