@@ -24,4 +24,4 @@ Please contact the author (Chihiro Taguchi) if you need help with getting the mo
 - If your filename contains a whitespace, the recognizer program might not be able to find your annotation file. Make sure to have no whitespace characters; substitute them with underscores (_) if necessary.
 
 ## Contact
-Chihiro Taguchi: chihirot at nd.edu
+Chihiro Taguchi: ctaguchi at nd.edu
